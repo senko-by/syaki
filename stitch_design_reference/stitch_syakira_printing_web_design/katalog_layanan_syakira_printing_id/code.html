@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Katalog - Syakira Printing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#d6e0f6",
+                      "primary": "#006970",
+                      "on-primary": "#ffffff",
+                      "on-primary-container": "#003235",
+                      "on-error-container": "#93000a",
+                      "surface-container": "#ebeef0",
+                      "surface": "#f7fafc",
+                      "on-surface-variant": "#3d494a",
+                      "tertiary-fixed": "#dde3eb",
+                      "on-tertiary-container": "#262d33",
+                      "inverse-primary": "#5dd8e2",
+                      "tertiary-container": "#8d949b",
+                      "on-secondary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-low": "#f1f4f6",
+                      "on-error": "#ffffff",
+                      "primary-fixed-dim": "#5dd8e2",
+                      "surface-container-high": "#e5e9eb",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed-variant": "#41474e",
+                      "outline": "#6d797b",
+                      "outline-variant": "#bcc9ca",
+                      "tertiary": "#595f66",
+                      "surface-container-highest": "#e0e3e5",
+                      "surface-bright": "#f7fafc",
+                      "on-secondary-container": "#596376",
+                      "tertiary-fixed-dim": "#c1c7cf",
+                      "error-container": "#ffdad6",
+                      "background": "#f7fafc",
+                      "primary-container": "#00a3ad",
+                      "inverse-surface": "#2d3133",
+                      "surface-tint": "#006970",
+                      "inverse-on-surface": "#eef1f3",
+                      "secondary": "#555f71",
+                      "on-tertiary-fixed": "#161c22",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed": "#121c2c",
+                      "on-primary-fixed-variant": "#004f54",
+                      "on-background": "#181c1e",
+                      "surface-variant": "#e0e3e5",
+                      "secondary-fixed": "#d9e3f9",
+                      "on-secondary-fixed-variant": "#3d4759",
+                      "surface-dim": "#d7dadc",
+                      "primary-fixed": "#7df4ff",
+                      "secondary-fixed-dim": "#bdc7dc",
+                      "on-surface": "#181c1e",
+                      "on-primary-fixed": "#002022"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "stack-lg": "32px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "stack-sm": "8px",
+                      "unit": "4px",
+                      "stack-md": "16px",
+                      "margin-desktop": "40px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg-mobile": [
+                              "Hanken Grotesk"
+                      ],
+                      "display": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-md": [
+                              "JetBrains Mono"
+                      ],
+                      "label-sm": [
+                              "JetBrains Mono"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scale-98:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest h-[72px] w-full sticky top-0 z-50 border-b border-outline-variant flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Syakira Printing</div>
+<div class="hidden md:flex space-x-gutter">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Beranda</a>
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1" href="#">Katalog</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Pemesanan</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Kontak</a>
+</div>
+<button class="bg-primary-container text-on-primary font-body-md text-body-md font-bold px-stack-md py-stack-sm rounded hover:bg-primary transition-colors duration-200 scale-98">
+            Minta Penawaran
+        </button>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+<!-- Header -->
+<header class="mb-stack-lg">
+<h1 class="font-display text-display text-on-background mb-stack-sm">Katalog Layanan</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Solusi cetak presisi yang disesuaikan dengan kebutuhan bisnis Anda. Mulai dari cetak digital cepat hingga produksi offset skala besar.</p>
+</header>
+<!-- Catalog Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Category 1: Digital Printing -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded group hover:border-primary hover:shadow-[0px_2px_4px_rgba(0,0,0,0.05)] transition-all duration-300 flex flex-col">
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative border-b border-outline-variant">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A high-resolution, close-up photograph of freshly printed business cards and brochures emerging from a modern digital press. The setting is a clean, well-lit professional print shop with bright, high-key lighting emphasizing the sharp text and vibrant colors on the paper. The aesthetic is precise, technical, and dependable, utilizing a corporate color palette with subtle teal accents against crisp white surfaces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbef8XIJFWigugnOceUbPpJZTI-HcTLiFqKshhfpmlspoJiKYTAvzkpzHq0TgcZZUeMh1yb52_DPPPjXavRu2YvlnlMxwcEDWQBGsatfykGelgCMF-pirLi2emp_fpuBGJIC_bfIcDJZTCk89HzuS7zj3LKOxvJW1kHBgoe9zdAYZRAXuVpzPYBrKpPskyibgZTAIh6To5XQ4Lf3hLIwG9Jh3ZZH4f9VTtpOcCW5906jGI6FbrbUbFelHOiO8yxSSQ1UAc5y6HJGdV"/>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-md text-secondary mb-unit">Cetak Digital</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">Pengerjaan cepat untuk cetak jumlah sedikit. Ideal untuk kartu nama, brosur, dan kebutuhan mendesak.</p>
+<div class="font-label-sm text-label-sm text-tertiary mb-stack-md flex items-center gap-2">
+<span>Cardstock</span>
+<span class="text-outline-variant">|</span>
+<span>Matte/Gloss</span>
+<span class="text-outline-variant">|</span>
+<span>Same-day</span>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Harga mulai dari</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Rp 50.000 / box</span>
+</div>
+<button class="bg-transparent border border-primary text-primary font-body-md text-body-md font-bold px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200 scale-98">
+                            Pesan Sekarang
+                        </button>
+</div>
+</div>
+</article>
+<!-- Category 2: Large Format -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded group hover:border-primary hover:shadow-[0px_2px_4px_rgba(0,0,0,0.05)] transition-all duration-300 flex flex-col">
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative border-b border-outline-variant">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A wide-angle, sharply focused image showing a massive industrial large-format printer outputting a vibrant outdoor banner. The environment is a clean, modern workshop with bright white lighting that highlights the precision of the machinery and the vivid cyan and magenta inks. The overall mood conveys industrial reliability and technical capability, fitting a professional printing service brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbvPl-ervIK8kQ4eYEZ5PF3jGDyigYSUeD52FhibhK7dEfOUban50ass4y4uRLLKWYZAVmAdrddwqrePicGdgDyXLpwqXyuNf3qEW0CbxbulvUiJgtQZ0Ku06bj-vXyOAM7zrLM8MRJKyL3Q673SA4oUUSd5f5Er21PEN6xO3kSmecyhjSmkZ0ZdqnqNNocaPkisNLP9hHRNVqfaDh19RToqvvtwMnv6h5sLlheV72bvXrQryiW12wNFwz3p5Z3iNAlmMGmZh99P_B"/>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-md text-secondary mb-unit">Format Besar</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">Visibilitas tinggi. Cetak tahan lama untuk spanduk, poster, dan kebutuhan arsitektur.</p>
+<div class="font-label-sm text-label-sm text-tertiary mb-stack-md flex items-center gap-2">
+<span>Vinyl/Canvas</span>
+<span class="text-outline-variant">|</span>
+<span>Weatherproof</span>
+<span class="text-outline-variant">|</span>
+<span>Custom Size</span>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Harga mulai dari</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Rp 35.000 / m²</span>
+</div>
+<button class="bg-transparent border border-primary text-primary font-body-md text-body-md font-bold px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200 scale-98">
+                            Pesan Sekarang
+                        </button>
+</div>
+</div>
+</article>
+<!-- Category 3: Offset Printing -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded group hover:border-primary hover:shadow-[0px_2px_4px_rgba(0,0,0,0.05)] transition-all duration-300 flex flex-col">
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative border-b border-outline-variant">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="An intricately detailed photograph of a large, heavy-duty offset printing press in operation. Stacks of pristine white paper are visible, with mechanical rollers transferring ink with exact precision. The setting is a minimalist, structured print shop illuminated by daylight-balanced overhead fixtures. The visual style emphasizes mechanical precision and industrial dependability, utilizing sharp contrasts between the metallic machinery and clean paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeMQkvNMut0MYaRNzBy6oYcx4OCzaqOkt6IK0XUQftYoJZ8UiU8GFaQlzZ5BtwPI0EmurNG1H0UCGwq1pf0_8gFsAdSeSrzP1nZ5lYi0Zf-kNLX3z0IpR-pLpCdbPvFCKLwtXOphq0ZZxbsj3sV-pu5YNoYGKut-Sdf-qnq0V4L_2JMI6kGSFIQQin4AZMDIakt4FTLEDiIQmwCAMh91rynJB4z-Jgyp9unyX--Nwf2T9lAOxbiEVrYIaAd5WXeumxCRI_JBczlAXj"/>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-md text-secondary mb-unit">Cetak Offset</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">Kualitas terbaik untuk volume besar. Standar industri untuk katalog, majalah, dan kemasan.</p>
+<div class="font-label-sm text-label-sm text-tertiary mb-stack-md flex items-center gap-2">
+<span>CMYK Spot</span>
+<span class="text-outline-variant">|</span>
+<span>High Volume</span>
+<span class="text-outline-variant">|</span>
+<span>Die-cutting</span>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Harga mulai dari</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Custom Quote</span>
+</div>
+<button class="bg-transparent border border-primary text-primary font-body-md text-body-md font-bold px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200 scale-98">
+                            Pesan Sekarang
+                        </button>
+</div>
+</div>
+</article>
+<!-- Category 4: Custom Canvas Tote -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded group hover:border-primary hover:shadow-[0px_2px_4px_rgba(0,0,0,0.05)] transition-all duration-300 flex flex-col">
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative border-b border-outline-variant">
+<img alt="Custom Canvas Tote" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWOBSXT_5tHpkWfexYG5e6LAChK1MqQkvW3LnFljyu8kKXeIT4aPqMuFHMER3zlk12soGPhJfBOCFHSX4Ommni3uU-At3aFiqv_sO6PtFTk3UxKIniAeFzlo7OYHLePHcTGSOMc0sEGiuVorZ3LevLliAFHQu31LfXSKS5cDlnH8HxiwBKH2m4zX_gDu2vrTj9g-28dNWP98MR7av8oKKaccR4EC1zpjrvrFjiZ8-xmSGc9sKJJRAsf_XPTIWEhrZJTt5bOeFAHIw_"/>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-md text-secondary mb-unit">Tas Tote Kanvas Custom</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">Tas kanvas stylish untuk acara atau penggunaan pribadi. Ramah lingkungan dengan kualitas cetak tinggi.</p>
+<div class="font-label-sm text-label-sm text-tertiary mb-stack-md flex items-center gap-2">
+<span>Canvas</span>
+<span class="text-outline-variant">|</span>
+<span>Eco-friendly</span>
+<span class="text-outline-variant">|</span>
+<span>Custom Print</span>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Harga mulai dari</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Rp 25.000 / pcs</span>
+</div>
+<button class="bg-transparent border border-primary text-primary font-body-md text-body-md font-bold px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200 scale-98">
+                            Pesan Sekarang
+                        </button>
+</div>
+</div>
+</article>
+<!-- Category 5: Custom Apparel -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded group hover:border-primary hover:shadow-[0px_2px_4px_rgba(0,0,0,0.05)] transition-all duration-300 flex flex-col">
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative border-b border-outline-variant">
+<img alt="Custom Apparel" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdRAx0AQp0_RXnbKMTZLDlYDKlZHVli3wKhAXR6LAmp5aZxIs1vmsyoJ50ZB8QxxZSQXyrQl3Updf_KDWpaLXhd8-NDMPCheOCWH0yM4DH6Vn_aTlIbfAfud3v2q6qLkAMiNPVAA_2t0_3bvd7F8z7FmoXfNVGJoqZFMoPp1O5ag5FX7LiocFcOLgwK9sd-rEY5vFTRn_rx9xPt7wj0fEByNsq-yabTYysWhv6fgM9Qlk7CbWlnWc4AWG1sFDfvOMDtgl4sBkzWKjZ"/>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-md text-secondary mb-unit">Pakaian Custom</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">Cetak kaos premium dengan warna cerah dan tahan lama. Sempurna untuk tim dan merchandise.</p>
+<div class="font-label-sm text-label-sm text-tertiary mb-stack-md flex items-center gap-2">
+<span>Cotton Combed</span>
+<span class="text-outline-variant">|</span>
+<span>DTF/Screen</span>
+<span class="text-outline-variant">|</span>
+<span>All Sizes</span>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Harga mulai dari</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Rp 75.000 / pcs</span>
+</div>
+<button class="bg-transparent border border-primary text-primary font-body-md text-body-md font-bold px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200 scale-98">
+                            Pesan Sekarang
+                        </button>
+</div>
+</div>
+</article>
+<!-- Category 6: Premium Tumbler -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded group hover:border-primary hover:shadow-[0px_2px_4px_rgba(0,0,0,0.05)] transition-all duration-300 flex flex-col">
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative border-b border-outline-variant">
+<img alt="Premium Tumbler" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc-kreYzHKKgj6iEHqSIP97Q0mBNvBrc6WUggWxGiYxixP9Rr6rHWtBwF19SSEAiBub9ZHGpk39F0fu3S6KYaUzZrdZqS040s_M0THjN8yplundX6VGVtvBc09ggncKNKixp6KYMvGQm3zf1prX3eqBPvGyY020jrkQeTn-7YqUbW6XRyAkf4lPJdkQadUo3Cq_dYGXgr7ClHwB-v0v_lK3vFOVt_110vMLCJ7n6_D4_sTaZbKJloLwB4XJmI7MtxRomNtVuAuRB-3"/>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-md text-secondary mb-unit">Tumbler Premium</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">Wadah minum fungsional dengan grafir laser atau cetak UV. Ideal untuk kado perusahaan.</p>
+<div class="font-label-sm text-label-sm text-tertiary mb-stack-md flex items-center gap-2">
+<span>Stainless Steel</span>
+<span class="text-outline-variant">|</span>
+<span>Laser/UV</span>
+<span class="text-outline-variant">|</span>
+<span>BPA Free</span>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Harga mulai dari</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Rp 45.000 / pcs</span>
+</div>
+<button class="bg-transparent border border-primary text-primary font-body-md text-body-md font-bold px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200 scale-98">
+                            Pesan Sekarang
+                        </button>
+</div>
+</div>
+</article>
+<!-- Category 7: Wedding Invitations -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded group hover:border-primary hover:shadow-[0px_2px_4px_rgba(0,0,0,0.05)] transition-all duration-300 flex flex-col">
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative border-b border-outline-variant">
+<img alt="Wedding Invitations" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLMWQ6JMiMOJGQss43fNo_6gJ8qb-bX37EWWtlibcgqSLShpjGrXSs09XrJC5k6TV1IjBrzk2LlwoGeiJTlWD7mMS0Ve5clLcduCSE-d9qfybgYTwBtO4yQ5AwZiAB6uwcT47VigkanuhpP89KYNxZsMRZdsc_fq1XvWsFKn0hYUch5cNVDZavS_o-VJu08xbg8R62IWLoMpAAXlO-mnYUNVwo4VChIWQZoJ4nPKvvDoqAycV0fPgjoXpTmMAYNkhPYzjhRcDlBt9K"/>
+</div>
+<div class="p-stack-md flex flex-col flex-grow">
+<h2 class="font-headline-md text-headline-md text-secondary mb-unit">Undangan Pernikahan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow">Undangan cantik untuk hari spesial Anda. Berbagai pilihan kertas dan finishing premium.</p>
+<div class="font-label-sm text-label-sm text-tertiary mb-stack-md flex items-center gap-2">
+<span>Fancy Paper</span>
+<span class="text-outline-variant">|</span>
+<span>Foil/Emboss</span>
+<span class="text-outline-variant">|</span>
+<span>Custom Design</span>
+</div>
+<div class="flex items-end justify-between mt-auto">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Harga mulai dari</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Rp 5.000 / pcs</span>
+</div>
+<button class="bg-transparent border border-primary text-primary font-body-md text-body-md font-bold px-4 py-2 rounded hover:bg-surface-container-low transition-colors duration-200 scale-98">
+                            Pesan Sekarang
+                        </button>
+</div>
+</div>
+</article></div>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface w-full py-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col gap-unit">
+<div class="font-headline-md text-headline-md text-surface-bright mb-stack-sm">Syakira Printing</div>
+<p class="font-label-md text-label-md text-surface-variant">Presisi di setiap piksel.</p>
+<p class="font-body-md text-body-md text-surface-variant mt-auto">© 2024 Syakira Printing. Hak cipta dilindungi undang-undang.</p>
+</div>
+<div class="flex flex-col gap-unit">
+<h3 class="font-label-md text-label-md text-primary-fixed mb-unit uppercase tracking-widest">Legal</h3>
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Kebijakan Privasi</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Ketentuan Layanan</a>
+</div>
+<div class="flex flex-col gap-unit">
+<h3 class="font-label-md text-label-md text-primary-fixed mb-unit uppercase tracking-widest">Dukungan</h3>
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Info Pengiriman</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">FAQ</a>
+</div>
+</div>
+</footer>
+</body></html>

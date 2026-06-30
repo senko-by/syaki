@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syakira Printing - Solusi Cetak Berkualitas & Cepat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#beranda">Syakira Printing</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+        <a class="active" href="#beranda">Beranda</a>
+        <a href="#katalog">Katalog</a>
+        <a href="#pesan">Pemesanan</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <a class="quote-button" href="#pesan">Minta Penawaran</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="technical-pill">
+            <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+            Akurat. Teknis. Terpercaya.
+          </p>
+          <h1>Solusi Cetak <span>Berkualitas</span> & Cepat</h1>
+          <p>Syakira Printing menghadirkan layanan cetak presisi tinggi dengan teknologi modern untuk kebutuhan personal maupun bisnis Anda. Keandalan industri di setiap lembar cetakan.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#katalog">Lihat Layanan <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+            <a class="button secondary" href="#kontak">Hubungi Kami</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/hero-printing.png" alt="Tumpukan material cetak premium dengan aksen warna teal">
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured" aria-labelledby="featured-title">
+      <div class="section-header center">
+        <h2 id="featured-title">Produk Unggulan Kami</h2>
+        <p>Jelajahi koleksi produk terbaru kami yang dirancang dengan presisi tinggi dan material premium untuk hasil cetak terbaik.</p>
+      </div>
+      <div class="featured-grid">
+        <article class="featured-item">
+          <img src="assets/tshirt.png" alt="Pakaian custom Syakira Printing">
+          <h3>Pakaian Custom</h3>
+          <p>Kaos dan seragam dengan desain eksklusif dan sablon berkualitas tinggi.</p>
+        </article>
+        <article class="featured-item">
+          <img src="assets/tote-bag.png" alt="Tas tote kanvas Syakira Printing">
+          <h3>Tas Tote Kanvas</h3>
+          <p>Tas ramah lingkungan dengan cetakan tajam untuk gaya dan promosi.</p>
+        </article>
+        <article class="featured-item">
+          <img src="assets/tumbler.png" alt="Tumbler premium Syakira Printing">
+          <h3>Tumbler Premium</h3>
+          <p>Botol minum elegan dengan grafir laser atau cetak UV yang tahan lama.</p>
+        </article>
+        <article class="featured-item">
+          <img src="assets/invitation.png" alt="Undangan pernikahan Syakira Printing">
+          <h3>Undangan Pernikahan</h3>
+          <p>Cetak undangan mewah dengan tekstur kertas premium dan desain elegan.</p>
+        </article>
+      </div>
+      <div class="center-action">
+        <a class="button primary compact" href="#katalog">Lihat Semua Katalog</a>
+      </div>
+    </section>
+
+    <section class="section catalog" id="katalog" aria-labelledby="catalog-title">
+      <div class="section-header">
+        <h2 id="catalog-title">Katalog Layanan</h2>
+        <p>Solusi cetak presisi yang disesuaikan dengan kebutuhan bisnis Anda. Mulai dari cetak digital cepat hingga produksi offset skala besar.</p>
+      </div>
+      <div class="catalog-grid">
+        <article class="service-card">
+          <img src="assets/digital-print.png" alt="Cetak digital untuk kartu nama dan brosur">
+          <div class="service-body">
+            <h3>Cetak Digital</h3>
+            <p>Pengerjaan cepat untuk cetak jumlah sedikit. Ideal untuk kartu nama, brosur, dan kebutuhan mendesak.</p>
+            <p class="spec-list"><span>Cardstock</span><span>Matte/Gloss</span><span>Same-day</span></p>
+            <div class="price-row">
+              <p><span>Harga mulai dari</span><strong>Rp 50.000 / box</strong></p>
+              <button class="button outline order-service" type="button" data-service="Cetak Digital">Pesan Sekarang</button>
+            </div>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="assets/large-format.png" alt="Mesin cetak format besar untuk banner">
+          <div class="service-body">
+            <h3>Format Besar</h3>
+            <p>Visibilitas tinggi. Cetak tahan lama untuk spanduk, poster, backdrop, dan kebutuhan arsitektur.</p>
+            <p class="spec-list"><span>Vinyl/Canvas</span><span>Weatherproof</span><span>Custom Size</span></p>
+            <div class="price-row">
+              <p><span>Harga mulai dari</span><strong>Rp 35.000 / m2</strong></p>
+              <button class="button outline order-service" type="button" data-service="Format Besar">Pesan Sekarang</button>
+            </div>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="assets/offset-print.png" alt="Cetak offset volume besar">
+          <div class="service-body">
+            <h3>Cetak Offset</h3>
+            <p>Kualitas terbaik untuk volume besar. Standar industri untuk katalog, majalah, dan kemasan.</p>
+            <p class="spec-list"><span>CMYK Spot</span><span>High Volume</span><span>Die-cutting</span></p>
+            <div class="price-row">
+              <p><span>Harga mulai dari</span><strong>Custom Quote</strong></p>
+              <button class="button outline order-service" type="button" data-service="Cetak Offset">Pesan Sekarang</button>
+            </div>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="assets/tote-bag.png" alt="Tas tote kanvas custom">
+          <div class="service-body">
+            <h3>Tas Tote Kanvas Custom</h3>
+            <p>Tas kanvas stylish untuk acara atau penggunaan pribadi. Ramah lingkungan dengan kualitas cetak tinggi.</p>
+            <p class="spec-list"><span>Canvas</span><span>Eco-friendly</span><span>Custom Print</span></p>
+            <div class="price-row">
+              <p><span>Harga mulai dari</span><strong>Rp 25.000 / pcs</strong></p>
+              <button class="button outline order-service" type="button" data-service="Tas Tote Kanvas">Pesan Sekarang</button>
+            </div>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="assets/tshirt.png" alt="Pakaian custom">
+          <div class="service-body">
+            <h3>Pakaian Custom</h3>
+            <p>Cetak kaos premium dengan warna cerah dan tahan lama. Sempurna untuk tim dan merchandise.</p>
+            <p class="spec-list"><span>Cotton Combed</span><span>DTF/Screen</span><span>All Sizes</span></p>
+            <div class="price-row">
+              <p><span>Harga mulai dari</span><strong>Rp 75.000 / pcs</strong></p>
+              <button class="button outline order-service" type="button" data-service="Pakaian Custom">Pesan Sekarang</button>
+            </div>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="assets/tumbler.png" alt="Tumbler premium">
+          <div class="service-body">
+            <h3>Tumbler Premium</h3>
+            <p>Wadah minum fungsional dengan grafir laser atau cetak UV. Ideal untuk kado perusahaan.</p>
+            <p class="spec-list"><span>Stainless Steel</span><span>Laser/UV</span><span>BPA Free</span></p>
+            <div class="price-row">
+              <p><span>Harga mulai dari</span><strong>Rp 45.000 / pcs</strong></p>
+              <button class="button outline order-service" type="button" data-service="Tumbler Premium">Pesan Sekarang</button>
+            </div>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="assets/invitation.png" alt="Undangan pernikahan premium">
+          <div class="service-body">
+            <h3>Undangan Pernikahan</h3>
+            <p>Undangan cantik untuk hari spesial Anda. Berbagai pilihan kertas dan finishing premium.</p>
+            <p class="spec-list"><span>Fancy Paper</span><span>Foil/Emboss</span><span>Custom Design</span></p>
+            <div class="price-row">
+              <p><span>Harga mulai dari</span><strong>Rp 5.000 / pcs</strong></p>
+              <button class="button outline order-service" type="button" data-service="Undangan Pernikahan">Pesan Sekarang</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section order" id="pesan" aria-labelledby="order-title">
+      <div class="section-header">
+        <h2 id="order-title">Pesan Online</h2>
+        <p>Konfigurasikan parameter cetak Anda di bawah ini. Tim pracetak kami akan meninjau spesifikasi dan aset Anda untuk memastikan kualitas hasil cetak yang optimal.</p>
+      </div>
+      <div class="order-layout">
+        <form class="order-form" id="order-form">
+          <section class="form-panel">
+            <div class="panel-title">
+              <span class="material-symbols-outlined" aria-hidden="true">person</span>
+              <h3>Informasi Klien</h3>
+            </div>
+            <div class="form-grid">
+              <label>Nama Lengkap
+                <input type="text" name="name" placeholder="Jane Doe" required>
+              </label>
+              <label>Alamat Email
+                <input type="email" name="email" placeholder="jane@company.com" required>
+              </label>
+              <label class="span-2">Nomor Telepon
+                <input type="tel" name="phone" placeholder="+62 812 3456 7890" required>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-panel technical-bg">
+            <div class="panel-title">
+              <span class="material-symbols-outlined" aria-hidden="true">print</span>
+              <h3>Parameter Pekerjaan</h3>
+            </div>
+            <div class="form-grid twelve">
+              <label class="span-8">Kategori Layanan
+                <select name="service" id="service-select" required>
+                  <option value="">Pilih kebutuhan cetak...</option>
+                  <option>Cetak Digital</option>
+                  <option>Format Besar</option>
+                  <option>Cetak Offset</option>
+                  <option>Tas Tote Kanvas</option>
+                  <option>Pakaian Custom</option>
+                  <option>Tumbler Premium</option>
+                  <option>Undangan Pernikahan</option>
+                </select>
+              </label>
+              <label class="span-4">Jumlah
+                <input type="number" name="quantity" min="1" placeholder="100" required>
+              </label>
+              <label class="span-6">Deadline
+                <input type="date" name="deadline" required>
+              </label>
+              <label class="span-6">Finishing
+                <select name="finishing">
+                  <option>Standar</option>
+                  <option>Laminasi matte</option>
+                  <option>Laminasi glossy</option>
+                  <option>Foil / Emboss</option>
+                  <option>Cutting khusus</option>
+                </select>
+              </label>
+            </div>
+            <div class="spec-readout">
+              <span>STATUS_SISTEM:</span>
+              <span>Ruang Warna: <strong>CMYK</strong></span>
+              <span>Bleed: <strong>3mm</strong></span>
+              <span>Resolusi: <strong>Min 300dpi</strong></span>
+            </div>
+          </section>
+
+          <section class="form-panel">
+            <div class="panel-title">
+              <span class="material-symbols-outlined" aria-hidden="true">folder_open</span>
+              <h3>Aset & Arahan</h3>
+            </div>
+            <label>Unggah Berkas (.PDF, .AI, .ZIP)
+              <span class="drop-zone" id="drop-zone">
+                <span class="material-symbols-outlined" aria-hidden="true">upload_file</span>
+                <strong>Klik untuk mengunggah</strong>
+                <small>atau seret dan lepas. Ukuran file maksimal: 500MB</small>
+                <input id="asset-upload" type="file" name="asset" accept=".pdf,.ai,.zip" multiple>
+              </span>
+            </label>
+            <ul class="file-list" id="file-list" aria-live="polite"></ul>
+            <label>Instruksi Khusus / Catatan Penyelesaian
+              <textarea name="notes" rows="4" placeholder="misal., Laminasi matte pada sampul, spot UV pada logo..."></textarea>
+            </label>
+          </section>
+
+          <button class="button primary submit-order" type="submit">
+            Kirim Pesanan <span class="material-symbols-outlined" aria-hidden="true">send</span>
+          </button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="order-aside" aria-label="Panduan pracetak">
+          <div class="aside-card">
+            <h3><span class="material-symbols-outlined" aria-hidden="true">fact_check</span> Daftar Periksa Pra-cetak</h3>
+            <ul>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><div><strong>Sematkan semua font</strong><p>Ubah tipografi menjadi outline untuk mencegah kesalahan substitusi.</p></div></li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><div><strong>Mode Warna CMYK</strong><p>Pastikan aset tidak dalam RGB untuk menjamin akurasi warna pada cetakan.</p></div></li>
+              <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span><div><strong>Sertakan Margin Bleed</strong><p>Perluas karya seni 3mm melampaui garis potong.</p></div></li>
+            </ul>
+          </div>
+          <div class="support-card">
+            <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
+            <h3>Butuh Bantuan Teknis?</h3>
+            <p>Spesialis pracetak kami siap meninjau file Anda sebelum penyerahan.</p>
+            <a class="button secondary compact" href="#kontak">Hubungi Dukungan</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontak" aria-labelledby="contact-title">
+      <div class="section-header center">
+        <h2 id="contact-title">Hubungi Kami</h2>
+        <p>Siap untuk memulai proyek cetak Anda berikutnya? Tim spesialis kami hadir untuk memberikan penawaran harga yang tepat, saran teknis, dan layanan yang dapat diandalkan.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Kontak Langsung</h3>
+          <a href="mailto:support@syakiraprinting.com">
+            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+            <span><strong>Dukungan Email</strong>support@syakiraprinting.com</span>
+          </a>
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noreferrer">
+            <span class="material-symbols-outlined" aria-hidden="true">phone</span>
+            <span><strong>Telepon / WhatsApp</strong>+62 812 3456 7890</span>
+          </a>
+          <div class="contact-line">
+            <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
+            <span><strong>Jam Operasional</strong>Senin-Jumat: 08:00 - 21:00<br>Sabtu: Tutup<br>Minggu: Tutup</span>
+          </div>
+        </div>
+        <div class="contact-card map-card">
+          <div class="map-heading">
+            <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+            <div>
+              <h3>Fasilitas Kami</h3>
+              <p>Jl. Printing Raya No. 12<br>Jakarta Selatan, Indonesia</p>
+            </div>
+          </div>
+          <div class="map-frame">
+            <img src="assets/map-preview.png" alt="Peta lokasi Syakira Printing di Jakarta Selatan">
+            <a class="direction-button" href="https://www.openstreetmap.org/?mlat=-6.227&mlon=106.817#map=15/-6.227/106.817" target="_blank" rel="noreferrer">
+              <span class="material-symbols-outlined" aria-hidden="true">directions</span>
+              Dapatkan Petunjuk Arah
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h2>Syakira Printing</h2>
+        <p>Presisi di setiap piksel. Layanan percetakan profesional untuk bisnis modern.</p>
+      </div>
+      <div>
+        <h3>Hukum</h3>
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Ketentuan Layanan</a>
+      </div>
+      <div>
+        <h3>Dukungan</h3>
+        <a href="#">Info Pengiriman</a>
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Syakira Printing. Presisi di setiap piksel.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
